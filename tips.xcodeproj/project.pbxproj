@@ -13,6 +13,7 @@
 		EC7AAF701B675B4E00569778 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7AAF6F1B675B4E00569778 /* Images.xcassets */; };
 		EC7AAF731B675B4E00569778 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7AAF711B675B4E00569778 /* LaunchScreen.xib */; };
 		EC7AAF7F1B675B4E00569778 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7AAF7E1B675B4E00569778 /* tipsTests.swift */; };
+		ECEF32261B92CC1A00DC844B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEF32251B92CC1A00DC844B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EC7AAF781B675B4E00569778 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7AAF7D1B675B4E00569778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7AAF7E1B675B4E00569778 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		ECEF32251B92CC1A00DC844B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				EC7AAF6F1B675B4E00569778 /* Images.xcassets */,
 				EC7AAF711B675B4E00569778 /* LaunchScreen.xib */,
 				EC7AAF661B675B4E00569778 /* Supporting Files */,
+				ECEF32251B92CC1A00DC844B /* SettingsViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				EC7AAF6B1B675B4E00569778 /* ViewController.swift in Sources */,
 				EC7AAF691B675B4E00569778 /* AppDelegate.swift in Sources */,
+				ECEF32261B92CC1A00DC844B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +417,7 @@
 				EC7AAF841B675B4E00569778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC7AAF851B675B4E00569778 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				EC7AAF871B675B4E00569778 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,35 +20,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
-        
-        // load tip percentage from defaults
-        tipPercentage = defaults.valueForKey("tipPercentage") as? Double
-        tipControl.selectedSegmentIndex = 1
+        tipControl.selectedSegmentIndex = (defaults.valueForKey("tipChoice") as? Int)!
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func onEditingChanged(sender: AnyObject) {
+        updateValues()
+    }
+    
+    func updateValues() {
         var tipPercentages = [0.18, 0.2, 0.22]
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         var billAmount = (billField.text as NSString).doubleValue
-        var tip = billAmount * tipPercentage
+        var tip = billAmount * tipPercentage!
         var total = billAmount + tip
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
-        // save tipPercentage
-        defaults.setValue(tipPercentage, forKey: "tipPercentage")
     }
-    
- 
 
 }
 
